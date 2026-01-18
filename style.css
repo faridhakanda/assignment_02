@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    background-color: #1A0B2E;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.banner {
+    background: url("./assets/hero-bg.png") cover ;
+
+}
+footer {
+    background-image: url("./assets/footer-bg.png");
+    
+}
+.footer {
+    padding: 50px 0;
+}
