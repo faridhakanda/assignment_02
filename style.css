@@ -89,6 +89,7 @@ hr {
     align-items: center;
     justify-content: center;
     text-align: center;
+    
 }
 .banner-image {
     /* border: 1px solid red; */
@@ -96,7 +97,9 @@ hr {
     height: 558px;
     justify-content: center;
     align-items: center;
-    margin-bottom: 180px;
+
+    /* margin-bottom: 180px; */
+    margin: 0px auto 180px;
     text-align: center;
     position: relative;
     z-index: 1;
@@ -151,12 +154,15 @@ hr {
 
 .banner-button {
     margin: 10px 2px;
+    display: inline-flex;
+    gap: 10px;
+    padding: 10px 20px;
 }
 
 /* About Section Style Code */
 .about {
     justify-content: center;
-    margin: 0 auto;
+    margin: 80px auto;
 }
 
 /* Footer Section Style Code */
@@ -175,6 +181,8 @@ footer {
     
 }
 
+
+/* Responsive style code for small and medium devices */
 @media screen and (max-width: 576px) {
     .headerContent {
         justify-content: space-between;
@@ -190,6 +198,37 @@ footer {
         font-size: 40px;
         font-weight: 800;
     }
+     .banner-image {
+        border: 1px solid red;
+        width: 380px;
+        height: 388px;
+        margin: auto;
+    }
+    .banner-circle {
+        width: 190px;
+        height: 190px;
+        margin-top: -15px;
+        margin-left: 26px; 
+    }
+    
+     .banner-microphone {
+        width: 60px;
+        margin-top: 85px;
+        margin-left: -30px;
+    }
+    .banner-newButton {
+        margin-top: 55px;
+        margin-left: 45px;
+        padding: 6px;
+    }
+    .techWave-text {
+        margin-top: 290px;
+        
+    }  
+    .techWave-text p {
+        font-size: 25px;
+    }
+
 }
 
 @media screen and (min-width: 576px) and (max-width: 992px) {
@@ -202,5 +241,65 @@ footer {
     }
     .mobileMenu {
         display: flex;
+    }
+   
+    /* .banner-image {
+        border: 1px solid red;
+        width: 450px;
+        height: 458px;
+        margin-bottom: 260px;
+        margin-right: 27px;
+    }
+    .banner-circle {
+        top: 20%;
+        left: 15%;
+        width: 330px;
+        height: 330px;
+    
+        
+    }
+    .banner-microphone {
+        margin-top: 170px;
+        margin-left: -50px;
+
+    }
+    .banner-newButton {
+        margin-top: 105px;
+        margin-left: 70px;
+        padding: 6px;
+    } */
+     .banner h1 {
+        font-size: 40px;
+        font-weight: 800;
+    }
+     .banner-image {
+        border: 1px solid red;
+        width: 500px;
+        height: 508px;
+        margin: auto;
+    }
+    .banner-circle {
+        width: 280px;
+        height: 280px;
+        margin-top: -30px;
+        margin-left: 20px; 
+    }
+    
+     .banner-microphone {
+        width: 80px;
+        margin-top: 120px;
+        margin-left: -40px;
+    }
+    .banner-newButton {
+        margin-top: 55px;
+        margin-left: 45px;
+        padding: 6px;
+    }
+    .techWave-text {
+        margin-top: 350px;
+        
+    }  
+    .techWave-text p {
+        font-size: 25px;
     }
 }
