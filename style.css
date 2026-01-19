@@ -9,15 +9,197 @@ html, body {
     color: #FFFFFF;
     text-align: center;
 }
-
-.banner {
-    background: url("./assets/hero-bg.png") cover ;
-
+/* Common Style id and class */
+.headerLogo {
+    font-size: 30px;
 }
-footer {
-    background-image: url("./assets/footer-bg.png");
+.logoText {
+    background: linear-gradient(to bottom,rgba(137, 3, 246, 0.923),rgba(243, 199, 40, 0.997));
+    color: transparent;
+    background-clip: text;
+}
+.container {
+    max-width: 1200px;
+    justify-content: center;
+    margin: 0 auto;
+}
+hr {
+    background-color: #4D2B8C;
+    height: 1px;
+    border-radius: 5px;
+    border: none;
+}
+
+.btn-primary {
+    background: linear-gradient(to right top, rgba(241, 208, 88, 0.855), rgba(241, 44, 4, 0.997), rgb(137, 3, 246));
+    border: none;
+    padding: 10px;
+    border-radius: 20px;
+    color: #FFFFFF;
+    font-weight: 600;
+    cursor: pointer;
+}
+.btn-secondary {
+    border: 1px solid #00FF88;
+    background: none;
+    color: #00FF88;
+    border-radius: 20px;
+    font-weight: 600;
+    padding: 10px; 
+    cursor: pointer;
+}
+.hide {
+    display: none;
+    color: red;
+}
+/* Header Navbar Style Code */
+.headerContent {
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+    align-items: center;
+    padding: 15px 0;
+}
+.headerContent nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+.headerContent nav ul li a {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+
+
+/* Banner Section Style Code */
+.banner {
+    background-image: url("./assets/hero-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: #FFFFFF;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.banner-image {
+    /* border: 1px solid red; */
+    width: 550px;
+    height: 558px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 180px;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+.banner-circle {
+    z-index: 10;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    top: 15%;
+    left: 18%;
     
 }
-.footer {
-    padding: 50px 0;
+.banner-microphone {
+    z-index: 20;
+    
+    position: absolute;
+    margin-top: 170px;
+    margin-left: -60px;
+
+}
+.banner-newButton {
+    z-index: 30;
+    position: absolute;
+    margin-top: 100px;
+    margin-left: 70px;
+    background: #00FF88;
+    border: 1px solid green;
+    padding: 5px;
+    border-radius: 15px;
+    width: 50px;
+    color: #000000;
+}
+.techWave-text {
+    z-index: 5;
+    position: absolute;
+    margin-top: 320px;
+}
+.techWave-text h1 {
+    font-size: 50px;
+    font-weight: 600;
+    padding: 5px;
+}
+.techWave-text p {
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 500;
+    padding: 5px;
+}
+
+
+.banner-button {
+    margin: 10px 2px;
+}
+
+/* About Section Style Code */
+.about {
+    justify-content: center;
+    margin: 0 auto;
+}
+
+/* Footer Section Style Code */
+footer {
+    
+    background-image: url("./assets/footer-bg.png");
+    background-size: cover;
+    width: 100%;
+    min-height: 400px;
+    background-repeat: no-repeat;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+@media screen and (max-width: 576px) {
+    .headerContent {
+        justify-content: space-between;
+        padding: 15px 30px;
+    }
+    .desktopMenu {
+        display: none;
+    }
+    .mobileMenu {
+        display: flex;
+    }
+    .banner h1 {
+        font-size: 40px;
+        font-weight: 800;
+    }
+}
+
+@media screen and (min-width: 576px) and (max-width: 992px) {
+    .headerContent {
+        justify-content: space-between;
+        padding: 15px 30px;
+    }
+    .desktopMenu {
+        display: none;
+    }
+    .mobileMenu {
+        display: flex;
+    }
 }

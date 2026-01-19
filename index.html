@@ -3,31 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
     <title>Assignment 2</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+
 </head>
 <body>
-    <header>
-        <section>
-            <h1>TechWave</h1>
-            <nav>
+    <header class="">
+        <section class="container headerContent">
+            <h1 class="headerLogo">Tech<span class="logoText">Wave</span></h1>
+            <nav class="desktopMenu">
                 <ul>
                     <li><a href="#">About</a></li>
                     <li><a href="#">Episodes</a></li>
                     <li><a href="#">Host</a></li>
                 </ul>
             </nav>
-            <button>Subscribe</button>
+            <button class="btn desktopMenu">Subscribe</button>
+           
+            <img class="mobileMenu hide" src="./assets/hamburger-menu.png" alt="Hamburger Menu Icon">
         </section>
     </header>
     <hr>
-    <main>
+    <main class="">
         <section class="banner">
-            <h1>TechWave</h1>
-            <p>Your daily dose of tech insights, productivity hacks, and personal growth</p>
-            <div>
-                <button>Listen On Spotify</button>
-                <button>Subscribe</button>
+            <div class="banner-image">
+                <img class="banner-circle" src="./assets/hero-circle.png" alt="">
+                <img class="banner-microphone" src="./assets/microphone.png" alt="">
+                <button class="banner-newButton">New</button>
+            </div>
+            <div class="techWave-text">
+                <h1>TechWave</h1>
+                <p>Your daily dose of tech insights, productivity hacks, and personal growth</p>
+                <button class="banner-button btn-primary">Listen On Spotify</button>
+                <button class="banner-button btn-secondary">Subscribe</button>
             </div>
         </section>
         <section class="about">
@@ -114,7 +126,7 @@
     </main>
     <footer>
         <section class="footer">
-            <h1>Tech Wave</h1>
+            <h1>Tech<span class="logoText">Wave</span></h1>
             <div>
                 <img src="./assets/spotify.png" alt="Spotify Icon">
                 <img src="./assets/apple-podcast.png" alt="Apple Podcast Icon">
