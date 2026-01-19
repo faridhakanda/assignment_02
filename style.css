@@ -2,13 +2,13 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    overflow-x: hidden;
 }
 
 html, body {
     background-color: #1A0B2E;
     color: #FFFFFF;
     text-align: center;
-    overflow-x: hidden;
 }
 /* Common Style id and class */
 .headerLogo {
