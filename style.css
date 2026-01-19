@@ -156,7 +156,13 @@ hr {
     font-weight: 500;
     padding: 8px;
 }
-
+.bannerButtons {
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
 
 .banner-button {
     margin: 10px 2px;
