@@ -134,7 +134,8 @@ hr {
     margin-top: 115px;
     margin-left: 70px;
     background: #00FF88;
-    border: 1px solid green;
+    box-shadow: 1px 1px 4px 4px rgba(18, 210, 79, 0.451);
+    border: none;
     padding: 5px;
     border-radius: 15px;
     width: 50px;
@@ -174,7 +175,124 @@ hr {
 /* About Section Style Code */
 .about {
     justify-content: center;
-    margin: 80px auto;
+    margin: 35px auto;
+}
+.about .aboutText {
+    padding: 40px 10px;
+}
+.about .aboutText h1 {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 16px;
+    
+}
+.about .aboutText p {
+    line-height: 20px;
+    padding-bottom: 20px;
+}
+
+.aboutHr {
+    width: 100%;
+    justify-content: center;
+    margin: 0 auto;
+    align-items: center;
+    height: 1px;
+}   
+.about .aboutCard{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    margin-top: 30px;
+}
+.card {
+    text-align: center;
+    align-items: center;
+    margin: 10px;
+    padding: 10px;
+}
+.card h2 {
+    color: #00FF88;
+    font-size: 35px;
+    margin-bottom: 10px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+.my-plus {
+    font-size: 25px;
+}
+
+
+/* Choose TechWave Section style code */
+.chooseTechWave {
+    background-color: #230E3D;
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    align-items: center;
+    margin: auto 0;
+}
+.chooseTechWaveContent {
+    margin: 20px;
+}
+.chooseTechWaveContent h1 {
+    margin-top: 30px;
+    padding: 10px;
+    font-size: 48px;
+    font-weight: bold;
+}
+.chooseCardContent {
+    padding: 5px;
+    display: grid;
+    grid-template-areas: 
+        'Headphone Mobile Mobile'
+        'Headphone Location Location'
+        'Interview Interview ResourceBook'
+    ;
+    gap: 15px;
+    
+    
+}
+.headPhone {
+    grid-area: Headphone;
+}
+.headPhoneContent {
+    align-items: start;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    margin-top: 15%;
+}
+.mobileDevice {
+    grid-area: Mobile;
+}
+.location {
+    grid-area: Location;
+}
+.interview {
+    grid-area: Interview;
+}
+.resourceBook {
+    grid-area: ResourceBook;
+}
+.chooseCard {
+    padding: 15px;
+    text-align: justify;
+    background-color: #351165;
+    border-radius: 20px;
+    align-items: center;
+    justify-content: center;
+}
+.chooseCard h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #FFFFFF;
+    margin: 8px 0;
+}
+.chooseCard p {
+    line-height: 24px;
 }
 
 /* Footer Section Style Code */
@@ -206,6 +324,7 @@ footer {
     .mobileMenu {
         display: flex;
     }
+    /* Banner Responsive style code */
     .banner h1 {
         font-size: 40px;
         font-weight: 800;
@@ -219,7 +338,7 @@ footer {
         width: 190px;
         height: 190px;
         margin-top: -15px;
-        margin-left: 20px; 
+        margin-left: 23px; 
     }
     
      .banner-microphone {
@@ -240,6 +359,48 @@ footer {
         font-size: 25px;
     }
 
+    /* About Section Responsive Style Code */
+    .aboutHr {
+        width: 90%;
+    }
+    .about .aboutCard{
+        grid-template-columns: auto auto;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    /* ChooseWave Section Responsive Style Code */
+    .chooseTechWaveContent h1 {
+        font-size: 30px;
+    }
+    .chooseCardContent {
+        grid-template-areas:
+            'Headphone'
+            'Mobile'
+            'Location'
+            'Interview'
+            'ResourceBook'
+        ;
+    }
+    
+    .headPhone {
+        grid-area: Headphone;
+    }
+    .headPhoneContent {
+        margin-top: 2%;
+    }
+    .mobileDevice {
+        grid-area: Mobile;
+    }
+    .location {
+        grid-area: Location;
+    }
+    .interview {
+        grid-area: Interview;
+    }
+    .resourceBook {
+        grid-area: ResourceBook;
+    }
 }
 
 @media screen and (min-width: 576px) and (max-width: 992px) {
@@ -253,7 +414,8 @@ footer {
     .mobileMenu {
         display: flex;
     }
-     .banner h1 {
+    /* Banner Section Responsive Style Code */
+    .banner h1 {
         font-size: 40px;
         font-weight: 800;
     }
@@ -285,5 +447,48 @@ footer {
     }  
     .banner-text p {
         font-size: 25px;
+    }
+
+    /* About Section Responsive Style Code */
+    .aboutHr {
+        width: 90%;
+    }
+    .about .aboutCard {
+        grid-template-columns: auto auto;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    /* ChooseWave Section Responsive Style Code */
+    .chooseTechWaveContent h1 {
+        font-size: 40px;
+    }
+    .chooseCardContent {
+        grid-template-areas:
+            'Headphone'
+            'Mobile'
+            'Location'
+            'Interview'
+            'ResourceBook'
+        ;
+    }
+    
+    .headPhone {
+        grid-area: Headphone;
+    }
+    .headPhoneContent {
+        margin-top: 2%;
+    }
+    .mobileDevice {
+        grid-area: Mobile;
+    }
+    .location {
+        grid-area: Location;
+    }
+    .interview {
+        grid-area: Interview;
+    }
+    .resourceBook {
+        grid-area: ResourceBook;
     }
 }
