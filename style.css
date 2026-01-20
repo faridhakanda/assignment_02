@@ -314,18 +314,25 @@ hr {
     flex-direction: row;
     justify-content: space-between;
     gap: 10px;
-    margin-bottom: 30px;
-    padding: 20px;
+    /* margin-bottom: 30px; */
+    margin: 30px 20px;
+    /* padding: 20px; */
     
 }
 .episodeCard {
-    width: 360px;
+    width: 320px;
     background-color: #250D44;
     border-radius: 20px;
+    margin: auto;
+    
+}
+.episodeVideo {
+    width: 100%;
+    height: 100%;
 }
 .episodeText {
     text-align: start;
-    margin-left: 20px;
+    margin: 0 20px;
 
 }
 .episodeText h4 {
@@ -573,21 +580,43 @@ hr {
         gap: 15px;
     }
 
-
-    /* Footer Responsive Style Code small device */
-    .footerLogo {
-        margin-top: 5px;
-    }
+    /* Footer Section Responsive style code */
+   
     .footer-image {
-        margin: 5px;
+        margin: 10px auto 0;
     }
     .footer-image ul {
         grid-template-columns: auto auto;
-        gap: 2px;
+        gap: 5px;
+        margin-top: 2px;
+    }
+    .footer-image ul p {
+        font-size: 12px;
+        margin: 2px;
+        
+    }
+    .footer-image ul img {
+        width: 12px;
+        height: 12px;
+        
     }
     .footer-image .copyRight {
+        /* margin-top: 30px; */
+        font-size: 12px;
+        margin-top: 10px;
+        margin-bottom: 15px;
+        
+    }
+    .footerLogo {
+        font-size: 25px;
         margin-bottom: 5px;
     }
+    .logoText {
+        background: linear-gradient(to bottom,rgba(137, 3, 246, 0.923),rgba(243, 199, 40, 0.997));
+        color: transparent;
+        background-clip: text;
+    }
+
 }
 
 
@@ -727,18 +756,39 @@ hr {
         gap: 15px;
     }
 
-    /* Footer Responsive Style Code for medium to large */
-    .footerLogo {
-        margin-top: 15px;
-    }
+    
+    
+    /* Footer Responsive Style code for medium to large device */
     .footer-image {
-        margin: 15px;
+        margin: 15px auto 0;
     }
     .footer-image ul {
         grid-template-columns: auto auto;
-        gap: 2px;
+        gap: 10px;
+        margin-top: 5px;
+    }
+    .footer-image ul p {
+        font-size: 16px;
+        margin: 5px;
+        
+    }
+    .footer-image ul img {
+        width: 16px;
+        height: 16px;
+        
     }
     .footer-image .copyRight {
-        margin-bottom: 15px;
+        font-size: 16px;
+        margin-top: 15px;
+        margin-bottom: 20px;
+    }
+    .footerLogo {
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+    .logoText {
+        background: linear-gradient(to bottom,rgba(137, 3, 246, 0.923),rgba(243, 199, 40, 0.997));
+        color: transparent;
+        background-clip: text;
     }
 }
